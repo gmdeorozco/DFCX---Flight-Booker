@@ -1,0 +1,109 @@
+{
+  "name": "2a274310-2d76-45f7-a23f-06118da05c6c",
+  "displayName": "Ticket information",
+  "form": {
+    "parameters": [ {
+      "displayName": "departure_city",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What city would you like the flight to depart from?" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "destination_city",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your destination city?\r\n" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "departure_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the month and day of the departure?\r\n" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "return_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the month and day for the returning flight?\r\n" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "passenger_name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the passenger's name?\r\n" ]
+            },
+            "languageCode": "en"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for that information. Let me check on the availability of your ticket." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Confirm trip",
+    "name": "1106c3ee-d12f-43cf-821a-7b17e0631eb8"
+  } ],
+  "transitionRouteGroups": [ "FAQ during Booking" ]
+}

@@ -1,0 +1,157 @@
+{
+  "name": "60d9bbeb-4598-495d-ab02-25289892da99",
+  "displayName": "Positive_Check_flight",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Check flight status"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.flight_status"
+      },
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1234"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "abcdefghijk"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "P34K09"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Looking up your flight reference P34K09, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\r\n\r\nWould you like to make any changes to your flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, we look forward to having you fly with us soon.." ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "No worries, I'm glad to be of assistance today. Goodbye." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1727504242,
+    "nanos": 905422000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

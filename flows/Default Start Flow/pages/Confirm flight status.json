@@ -1,0 +1,65 @@
+{
+  "name": "b0808eca-6795-45e1-8d1a-16a19133c31d",
+  "displayName": "Confirm flight status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Looking up your flight reference $session.params.pnr_num, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\r\n\r\nWould you like to make any changes to your flight?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Our agents will be in touch soon for your request to amend your scheduled flight" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Anything else?",
+    "name": "9db6dfd3-2c07-4c84-8c92-8f7d309295e4"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great, we look forward to having you fly with us soon.." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Anything else?",
+    "name": "f7d17660-eefe-4157-b4ed-b3aa6b662b74"
+  }, {
+    "intent": "user.request.repeat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me repeat that:" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Check flight status",
+    "name": "c225a496-f138-4dd7-be65-6e811f19348d"
+  } ],
+  "transitionRouteGroups": [ "FAQs during Flight Status" ]
+}

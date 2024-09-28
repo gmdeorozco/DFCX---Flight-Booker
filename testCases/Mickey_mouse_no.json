@@ -1,0 +1,176 @@
+{
+  "name": "4f0280c2-fbb2-49de-8be3-277cbb60226b",
+  "displayName": "Mickey_mouse_no",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I'd like to book a flight"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.book_a_flight"
+      },
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What city would you like the flight to depart from?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Austin"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your destination city?\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Boston"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day of the departure?\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Tomorrow"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day for the returning flight?\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Next Friday"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the passenger's name?\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Mickey Mouse"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm trip",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for that information. Let me check on the availability of your ticket." ]
+      }, {
+        "text": [ "This is to confirm that Mickey Mouse will fly\r\nFrom: Austin\r\nTo: Boston\r\nLeaving on: 2024-09-28\r\nReturning on: 2024-10-04\r\n\r\nIs this correct?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What city would you like the flight to depart from?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1727502925,
+    "nanos": 437130000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

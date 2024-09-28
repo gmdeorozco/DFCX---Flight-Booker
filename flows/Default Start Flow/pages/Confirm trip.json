@@ -1,0 +1,74 @@
+{
+  "name": "009867a8-c72c-46b9-a8d4-4b98586ddcc0",
+  "displayName": "Confirm trip",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "This is to confirm that $session.params.passenger_name will fly\r\nFrom: $session.params.departure_city\r\nTo: $session.params.destination_city\r\nLeaving on: $session.params.departure_date\r\nReturning on: $session.params.return_date\r\n\r\nIs this correct?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great, your flight is booked!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Anything else?",
+    "name": "508a31db-7dff-4146-8cbb-0d27450f53ab"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "departure_city",
+        "value": null
+      }, {
+        "parameter": "destination_city",
+        "value": null
+      }, {
+        "parameter": "departure_date",
+        "value": null
+      }, {
+        "parameter": "return_date",
+        "value": null
+      }, {
+        "parameter": "passenger_name",
+        "value": null
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Ticket information",
+    "name": "f663bd8c-18ce-4f3a-b821-70889f927f89"
+  }, {
+    "intent": "user.request.repeat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure, let me repeat that:" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Ticket information",
+    "name": "b605bdf9-2f2b-4887-860e-6366a74e26f2"
+  } ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "8deaa22d-bede-472d-8526-8448ba95a4a8",
+  "displayName": "General FAQs",
+  "transitionRoutes": [ {
+    "intent": "faq.miles.upgrade",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Yes, depending on the flight and availability, we can put in a request for an upgrade from Economy." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "38db1248-67ca-45e6-94a6-37bdccc26ed3"
+  }, {
+    "intent": "faq.cabin.limits",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "It depends on the destination airport. Generally, you are allowed a maximum of 1 cabin bag, not exceeding 7kg and with the Sum of L + W + H (including the wheels) must be no more than 115cm (45 inches)." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "53dd340a-aabe-4893-9f17-43850fec52e3"
+  }, {
+    "intent": "faq.cabin.batteries",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For Lithium batteries (includes Power Banks), no more than two spare batteries exceeding 100Wh and up to 160Wh, are permitted." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "27564fff-de8a-40f7-b4df-ec9a85070986"
+  } ]
+}

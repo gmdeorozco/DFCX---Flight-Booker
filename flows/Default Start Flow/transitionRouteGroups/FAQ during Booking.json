@@ -1,0 +1,32 @@
+{
+  "name": "7c86a8d0-4f38-407e-90d2-623cce5a8bcd",
+  "displayName": "FAQ during Booking",
+  "transitionRoutes": [ {
+    "intent": "faq.cabin.limits",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For this flight: You are only allowed a small cabin bag not exceeding 3kg and with the Sum of L + W + H (including the wheels) must be no more than 90cm (35 inches)." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "23ca4f49-05d8-431b-ad47-d40537d325c4"
+  }, {
+    "intent": "faq.miles.upgrade",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_page",
+        "value": "Booking"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Upgrade",
+    "name": "52eefa5d-1582-4f16-96d7-c0f7338d171c"
+  } ]
+}
